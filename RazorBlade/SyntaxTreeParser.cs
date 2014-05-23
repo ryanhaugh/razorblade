@@ -34,14 +34,16 @@ namespace RazorBlade
             };
         }
 
-        public static ReadOnlyCollection<Node> EmptyNodeCollection
+        internal static ReadOnlyCollection<Node> EmptyNodeCollection
         {
             get { return _emptyNodeCollection; }
         }
 
-        public static IEnumerable<Node> Parse(GeneratorResults results)
+        public static SyntaxTreeParserResults Parse(GeneratorResults results)
         {
-            return Traverse(results.Document).ToArray();
+            Node[] nodes = Traverse(results.Document).ToArray();
+
+            return new SyntaxTreeParserResults(new ReadOnlyCollection<Node>(nodes));
         }
 
         public static IEnumerable<Node> Traverse(Block block)
