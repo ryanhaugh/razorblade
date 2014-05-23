@@ -1,0 +1,102 @@
+# GLOBAL
+* text=auto
+
+# ASP
+*.asa text
+*.asp text
+*.inc text
+
+# ASSEMBLIES
+*.dll binary
+*.exe binary
+*.msi binary
+
+# BUILD / DEPLOY
+*.bat text
+*.build text
+*.cmd text
+*.msbuild text
+*.pl text
+*.pm text
+*.properties text
+*.t text
+*.targets text
+*.vbs text
+*.wsc text
+
+# DOCUMENTS
+*.csv text
+*.md text
+*.pdf binary
+*.rtf binary
+*.txt text
+*.zip binary
+
+# DOTNET
+*.ascx text
+*.ashx text
+*.aspx text
+*.cer binary
+*.ClientConfig text
+*.config text
+*.cs text diff=csharp 
+*.csproj text eol=crlf merge=union 
+*.cshtml text eol=crlf
+*.edmx text
+*.pvk binary
+*.resx text
+*.sln text eol=crlf merge=union 
+*.snk binary
+*.StyleCop text
+*.tt text
+*.vb text
+*.vbhtml text eol=crlf
+*.vbproj text eol=crlf merge=union 
+*.wsdl text
+*.xaml text
+*.xunit text
+
+# FONTS
+*.CompositeFont binary
+*.fon binary
+*.otf binary
+*.ttc binary
+*.ttf binary
+
+# FRONTEND
+*.coffee text
+*.css text
+*.htm text
+*.html text
+*.js text
+
+# IMAGES
+*.bmp binary
+*.gif binary
+*.jpg binary
+*.ico binary
+*.png binary
+*.psd binary
+
+# JSON / XML
+*.dtd text
+*.json text
+*.xml text
+*.xsd text
+*.xsl text
+*.xslt text
+
+# MEDIA
+*.icc binary
+*.mp3 binary
+*.mpeg binary
+*.swf binary
+
+# NUGET
+*.nupkg binary
+*.nuspec text
+
+# CUSTOM
+*.flx text
+
+
